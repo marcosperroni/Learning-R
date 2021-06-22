@@ -1,18 +1,18 @@
 # IF ELSE 1
 x <- runif(1, 0, 10)
 if(x < 3) {
-  y <- "MENOR QUE TRÊS"
+  y <- "MENOR QUE TR?S"
 } else {
-  y <- "MAIOR OU IGUAL A TRÊS"
+  y <- "MAIOR OU IGUAL A TR?S"
 }
 
 
 # IF ELSE 2
 x <- runif(1, 0, 15)
 if(x < 3) {
-  y <- "menor que três"
+  y <- "menor que tr?s"
 } else if (x >= 3 & x<=6.99) {
-  y <- "entre três e sete"
+  y <- "entre tr?s e sete"
 } else if (x >= 7 & x<=10){
   y <-  "entre sete e dez"
 } else{
@@ -22,9 +22,9 @@ if(x < 3) {
 # IF ELSE 3
 x <- runif(1, 0, 15)
 y <- if(x < 3) {
-   "menor que três"
+   "menor que tr?s"
 } else if (x >= 3 & x<=6.99) {
-   "entre três e sete"
+   "entre tr?s e sete"
 } else if (x >= 7 & x<=10){
     "entre sete e dez"
 } else{
@@ -43,7 +43,7 @@ for(i in seq_along(x)) {
   x[i] <- if(x[i] > 3) {  "maior"} else {  "menor"}
 }
 
-# FUNÇÃO LOOP FOR COM IF
+# FUN??O LOOP FOR COM IF
 flp <- function(x=10, y=0, z=10){
   x <- runif(x, y, z)
   for(i in seq_along(x)) {
@@ -54,7 +54,7 @@ flp <- function(x=10, y=0, z=10){
 
 
 # PERCORRENDO UMA MATRIZ COM LOOP FOR
-# ATRIBUI TESTE LÓGICO (BINÁRIO) A UMA MATRIZ k
+# ATRIBUI TESTE L?GICO (BIN?RIO) A UMA MATRIZ k
 ha <- matrix(1:12, 4, 3)
 k <-  matrix(nrow=4, ncol=3)
 for(i in seq_len(nrow(ha))) {
@@ -65,7 +65,7 @@ for(i in seq_len(nrow(ha))) {
 }
 
 # PERCORRENDO UMA MATRIZ COM LOOP FOR
-# ATRIBUI TESTE LÓGICO (MULTINOMIAL) A UMA MATRIZ LO
+# ATRIBUI TESTE L?GICO (MULTINOMIAL) A UMA MATRIZ LO
 x <- matrix(1:64, 8, 8)
 lo <-  matrix(nrow=8, ncol=8)
 for(i in seq_len(nrow(x))) {
@@ -83,7 +83,7 @@ for(i in seq_len(nrow(x))) {
 
 
 # PERCORRENDO UMA MATRIZ COM LOOP FOR
-# ATRIBUI TESTE LÓGICO (BINÁRIO) A UMA MATRIZ p
+# ATRIBUI TESTE L?GICO (BIN?RIO) A UMA MATRIZ p
 # PROGRAMADO DE FORMA DIFERENTE
 
 mymat = matrix(1:64, 8, 8) 
@@ -105,3 +105,6 @@ while(x <= 10) {
   print(c(x)) 
 }
 
+
+
+#legal
